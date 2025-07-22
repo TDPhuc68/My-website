@@ -1,0 +1,36 @@
+body
+{
+   background-image: url('Hnah1.jpg') ; */
+    margin: 0; /*tao khoang trong xung quanh 1 phan tu, ben ngoai duong vien cua no */
+    height: 100vh; /* thiet ke chieu cao cua 1 phan tu */
+   /* background-color: black;   /* to mau */
+    overflow: hidden;
+ 
+}
+
+span    
+{
+    background: url("http://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png");
+    width: 100px;            /* chieu rong */
+    height: 100px;          /* chieu cao*/
+    position: absolute;     /* cho phep dinh vi tuyet doi 1 phan tu tren phan tu cha gan nhat*/
+    pointer-events: none;
+    background-size: cover; /* dieu chinh kich thuoc cua anh sao cho bao phu toan vung chua */
+    left: 50%;        /* dinh vi vi tri ngang cua 1 phan tu */
+    top: 50%;           /* dinh vi vi tri doc cua 1 phan tu */
+    transform: translate(-50%,-50%); /* di chuyen phan tu tren trang web */
+    animation: animate 6s linear;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
