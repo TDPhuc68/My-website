@@ -5,7 +5,12 @@ body
     height: 100vh; /* thiet ke chieu cao cua 1 phan tu */
    /* background-color: black;   /* to mau */
     overflow: hidden;
- 
+
+    background-size: cover;         /* Ảnh phủ toàn bộ màn hình */
+    background-repeat: no-repeat;   /* Không lặp */
+    background-position: center;    /* Căn giữa */
+      
+      
 }
 
 span    
